@@ -4,51 +4,40 @@
     android:id="@+id/activity_home"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
+    android:background="#fffff0"
     tools:context=".HomeActivity">
 
     <ImageView
         android:id="@+id/logo_imageview"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:layout_centerInParent="true"
         android:src="@drawable/logo"/>
-
-    <TextView
-        android:id="@+id/title_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="택시공유주선"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        android:layout_below="@id/logo_imageview"
-        android:layout_centerHorizontal="true"/>
 
     <TableLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:stretchColumns="*">
         <TableRow>
             <Button
                 android:id="@+id/taxi_sang"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/title_textview"
+                android:layout_height="100dp"
                 android:background="#000000"
                 android:text="택 생성"
                 android:textColor="#ffffff"
-                android:textSize="20sp" />
+                android:textSize="27sp" />
 
             <Button
                 android:id="@+id/taxi_bogi"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:text="택 보기"
                 android:textColor="#ffffff"
                 android:background="#000000"
-                android:textSize="20sp"
-                android:layout_below="@id/title_textview"
+                android:textSize="27sp"
                 android:layout_centerHorizontal="true"/>
         </TableRow>
     </TableLayout>
