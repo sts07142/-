@@ -7,6 +7,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import java.util.ArrayList;
 
@@ -26,14 +27,22 @@ public class bogi_listActivity extends AppCompatActivity {
 
         listView.setAdapter(myAdapter);
 
+        bogi_detailFragment Bogi_detailFragment = new bogi_detailFragment();
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView parent, View v, int position, long id){
                 Toast.makeText(getApplicationContext(),
                         myAdapter.getItem(position).getMovieName(),
-                        Toast.LENGTH_LONG).show();
+                        Toast.LENGTH_SHORT).show();
+
+                openfragment(Bogi_detailFragment);
             }
         });
+
+    }
+
+    public void openfragment(Fragment fragment) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, fragment).addToBackStack(null).commit();
     }
 
     public void InitializeMovieData()
