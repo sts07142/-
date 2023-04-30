@@ -43,5 +43,19 @@ public class bogi_listActivity extends AppCompatActivity {
         movieDataList.add(new SampleData(R.drawable.logo, "미션임파서블","15세 이상관람가"));
         movieDataList.add(new SampleData(R.drawable.logo, "아저씨","19세 이상관람가"));
         movieDataList.add(new SampleData(R.drawable.logo, "어벤져스","12세 이상관람가"));
+        movieDataList.add(new SampleData(R.drawable.logo, "어벤져스","12세 이상관람가"));
+        movieDataList.add(new SampleData(R.drawable.logo, "어벤져스","12세 이상관람가"));
+        movieDataList.add(new SampleData(R.drawable.logo, "어벤져스","12세 이상관람가"));
+        movieDataList.add(new SampleData(R.drawable.logo, "어벤져스","12세 이상관람가"));
+        movieDataList.add(new SampleData(R.drawable.logo, "어벤져스","12세 이상관람가"));
+        movieDataList.add(new SampleData(R.drawable.logo, "어벤져스","12세 이상관람가"));
+        movieDataList.add(new SampleData(R.drawable.logo, "어벤져스","12세 이상관람가"));
+        movieDataList.add(new SampleData(R.drawable.logo, "어벤져스","12세 이상관람가"));
+        movieDataList.add(new SampleData(R.drawable.logo, "어벤져스","12세 이상관람가"));
+        movieDataList.add(new SampleData(R.drawable.logo, "어벤져스","12세 이상관람가"));
+        movieDataList.add(new SampleData(R.drawable.logo, "어벤져스","12세 이상관람가"));
+        movieDataList.add(new SampleData(R.drawable.logo, "어벤져스","12세 이상관람가"));
+        movieDataList.add(new SampleData(R.drawable.logo, "어벤져스","12세 이상관람가"));
+        movieDataList.add(new SampleData(R.drawable.logo, "어벤져스","12세 이상관람가"));
     }
 }
