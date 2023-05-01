@@ -7,6 +7,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -18,6 +19,11 @@ public class bogi_detailFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_bogi_detail, container, false);
         setHasOptionsMenu(true);
+        Bundle bundle = getArguments();
+        String name = bundle.getString("name");
+        Toast.makeText(getActivity().getApplicationContext(), name, Toast.LENGTH_SHORT).show();
+        TextView name1 = rootView.findViewById(R.id.departure);
+        name1.setText(name);
         return rootView;
     }
 

@@ -35,14 +35,19 @@ public class bogi_listActivity extends AppCompatActivity {
                         myAdapter.getItem(position).getMovieName(),
                         Toast.LENGTH_SHORT).show();
 
-                openfragment(Bogi_detailFragment);
+                Bundle bundle = new Bundle();
+                bundle.putString("name", myAdapter.getItem(position).getGrade());
+                openfragment(Bogi_detailFragment, bundle);
             }
         });
 
     }
 
-    public void openfragment(Fragment fragment) {
-        getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, fragment).addToBackStack(null).commit();
+    public void openfragment(Fragment fragment, Bundle bundle) {
+        fragment.setArguments(bundle);
+        getSupportFragmentManager().beginTransaction().
+                setCustomAnimations(R.anim.to_right, R.anim.from_right).
+                replace(R.id.frameLayout, fragment).addToBackStack(null).commit();
     }
 
     public void InitializeMovieData()

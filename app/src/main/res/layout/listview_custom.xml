@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/linearLayout3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,23 +23,47 @@
             tools:srcCompat="@tools:sample/backgrounds/scenic[2]" />
 
         <LinearLayout
+            android:layout_marginLeft="80dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="80dp"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/movieName"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="25dp"
+                android:textSize="18sp"
                 android:text="TextView" />
 
             <TextView
                 android:id="@+id/grade"
+                android:layout_marginLeft="15dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
                 android:text="TextView" />
         </LinearLayout>
-    </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="330dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dapart"
+                android:layout_marginTop="27.5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:textSize="18sp"
+                android:text="00:00" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
