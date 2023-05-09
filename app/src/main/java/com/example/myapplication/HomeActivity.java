@@ -23,7 +23,7 @@ public class HomeActivity extends AppCompatActivity {
         sangButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomeActivity.this, MainActivity.class);
+                Intent intent = new Intent(HomeActivity.this, MapviewActivity.class);
                 startActivity(intent);
             }
         });
@@ -47,7 +47,7 @@ public class HomeActivity extends AppCompatActivity {
         else {
             int seconds = (int) (System.currentTimeMillis() - pressedTime);
 
-            if ( seconds > 5000 ) {
+            if ( seconds > 2000 ) {
                 Toast.makeText(HomeActivity.this, " 한 번 더 누르면 종료됩니다." , Toast.LENGTH_LONG).show();
                 pressedTime = 0 ;
             }
