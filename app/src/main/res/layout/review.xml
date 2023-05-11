@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fffff0">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </FrameLayout>
+
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <Button
+                android:id="@+id/review_btn_1"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:background="@drawable/border"
+                android:text="약속시간을 잘 지켜요"
+                android:textColor="#000000"
+                android:textSize="27sp" />
+            <TextView/>
+            <Button
+                android:id="@+id/review_btn_2"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:background="@drawable/border"
+                android:text="매너가 좋아요"
+                android:textColor="#000000"
+                android:textSize="27sp" />
+            <TextView/>
+            <Button
+                android:id="@+id/review_btn_3"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:background="@drawable/border"
+                android:text="깔끔해요"
+                android:textColor="#000000"
+                android:textSize="27sp" />
+            <TextView/>
+        </TableLayout>
+
+        <include layout="@layout/toolbar_layout"/>
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navigationView"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="left"
+        app:headerLayout="@layout/navi_header"
+        app:menu="@menu/drawer_menu"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>
